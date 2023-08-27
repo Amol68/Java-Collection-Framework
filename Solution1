@@ -1,0 +1,28 @@
+This class contains various methods for manipulating arrays (such as sorting and searching). 
+This class also contains a static factory that allows arrays to be viewed as lists.The methods 
+in this class all throw a NullPointerException, if the specified array reference is null, except where noted.
+This class is a member of the Java Collections Framework.
+
+import java.util.Arrays;
+
+class HelloWorld {
+    public static void main(String[] args) {
+       
+    int[] a1 = {6,9,14,20};
+    
+    int index = Arrays.binarySearch(a1,9);
+    System.out.println("Index:" +index);
+    
+    System.out.println("----->-------->--------->");
+    
+     int[] a2 = {6,22,9,14,3,20,2,89,23};
+     
+     Arrays.sort(a2);
+     for(int i: a2){
+     System.out.println(i +" ");
+     }
+     
+    }
+}
+
+// All the operations occurs in O(logn)
